@@ -266,6 +266,69 @@ figure img {
   border-radius: 8px;
 }
 
+/* Hero photo (shown when the figure in index.html is uncommented) */
+.hero-grid {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.hero-text { flex: 1; min-width: 0; }
+
+/* The top margin is the height of the "Available for remote part-time work" line
+   above the headline, so the photo's top edge lines up with the top of the headline. */
+.hero-photo {
+  flex: 0 0 15rem;
+  margin: calc(0.85rem * 1.65 + 1rem) 0 0;
+}
+
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  border-radius: 50%;
+}
+
+/* Technologies */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.tags li {
+  padding: 0.3rem 0.85rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.95rem;
+}
+
+/* Closing call to action */
+.cta {
+  margin-top: 3rem;
+  padding: 3rem 0;
+  text-align: center;
+  background:
+    radial-gradient(ellipse at 50% 100%, rgba(255, 138, 31, 0.14), transparent 60%),
+    var(--surface);
+  border-top: 1px solid var(--border);
+}
+
+.cta h2::before { margin-left: auto; margin-right: auto; }
+
+.cta p {
+  max-width: 34rem;
+  margin: 0 auto 1.5rem;
+  color: var(--muted);
+}
+
 /* Footer */
 .site-footer {
   margin-top: 3rem;
@@ -284,4 +347,9 @@ figure img {
   nav { gap: 0.9rem; }
   nav a:not(.nav-cta) { font-size: 0.85rem; }
   .project { padding: 1.1rem 1.1rem 0.4rem; }
+}
+
+@media (max-width: 700px) {
+  .hero-grid { flex-direction: column; align-items: flex-start; gap: 1.75rem; }
+  .hero-photo { order: -1; flex-basis: auto; width: 10rem; margin-top: 0; }
 }

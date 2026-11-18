@@ -16,9 +16,9 @@
     <div class="container header-inner">
       <a class="logo" href="#top">Arthur Harding</a>
       <nav aria-label="Page sections">
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#how-i-work">How I work</a>
+        <a href="#work">My Work</a>
+        <a href="#about">About Me</a>
+        <a href="#how-i-work">How I Work</a>
         <a class="nav-cta" href="#contact">Contact</a>
       </nav>
     </div>
@@ -26,12 +26,20 @@
 
   <section class="hero" id="top">
     <div class="container">
+      <div class="hero-grid">
+      <div class="hero-text">
       <p class="eyebrow">Available for remote part-time work</p>
       <h1>Freelance <span class="accent">C#/.NET</span> developer</h1>
       <p class="lead">Bespoke business software: Windows desktop applications, back-end systems and hardware integration. UK-based sole trader.</p>
       <div class="hero-buttons">
         <a class="button" href="mailto:development@arthurharding.co.uk">Get in touch</a>
         <a class="button button-outline" href="#work">View my work</a>
+      </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="images/arthur-harding.jpg" width="600" height="600"
+             alt="Photo of Arthur Harding">
+      </figure>
       </div>
       <dl class="facts">
         <div><dt>6+</dt><dd>years of experience</dd></div>
@@ -43,6 +51,27 @@
   </section>
 
   <main class="container">
+
+    <section id="technologies">
+      <h2>Technologies</h2>
+      <ul class="tags">
+        <li>C#</li>
+        <li>.NET</li>
+        <li>WPF</li>
+        <li>MySQL</li>
+        <li>REST Web APIs</li>
+        <li>Git</li>
+        <li>CI/CD</li>
+        <li>ASP.NET</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Bootstrap</li>
+        <li>WinForms</li>
+        <li>VB.NET</li>
+        <li>F#</li>
+      </ul>
+    </section>
 
     <section id="introduction">
       <h2>Introduction</h2>
@@ -87,15 +116,15 @@
       <article class="project">
         <h3>Vial Transfer System <span class="dates">(2019)</span></h3>
         <p class="tech">WPF, MySQL, C#</p>
-        <p>This was an automation system worth several hundred thousand pounds, built to transfer several hundred thousand vials from one rack format to another. As lead software developer, I was responsible for the application’s development from initial requirements through to installation and delivery. This involved everything from gathering requirements from the customer, to designing the process code and the UI, to building the full app and database, to testing the app on the system and delivering it to the customer’s site.</p>
-        <p>We used several advanced laboratory and automation devices which I integrated into the application; for example, a robot arm with custom tooling which required its own interface. I also had to develop a robust system of input and output files in order to track the position and identity of the vials. All vial data was stored in an SQL database on the system PC, and the location was updated once the robot had moved the vial. Once delivered and installed, the system saved the client thousands of man-hours and tens of thousands of pounds.</p>
+        <p>This was an automation system worth several hundred thousand pounds, built to transfer several hundred thousand vials from one rack format to another. As lead software developer, I was responsible for the application’s development from initial requirements gathering through to installation and delivery. This involved everything from design meetings with the customer, to designing the process code and the UI, to building the full app and database, to testing the app on the system and delivering it to the customer’s site.</p>
+        <p>We used several advanced laboratory and automation devices which I integrated into the application; for example, a robot arm with custom tooling which required its own interface. I also designed and built a robust system of input and output files in order to track the position and identity of the vials. All vial data was stored in an SQL database on the system PC, and the location was tracked throughout the whole process. Once delivered and installed, the system saved the client thousands of hours and tens of thousands of pounds.</p>
       </article>
 
       <article class="project">
         <h3>Sporting Group Pricing API <span class="dates">(2022)</span></h3>
         <p class="tech">REST Web APIs, C#, F#, Git, CI/CD</p>
         <p>This was a live API which was crucial to the functioning of the entire business, written in both C# and F#. Working with an established codebase written in both C# and F# required me to quickly become familiar with unfamiliar technologies and understand the complex business logic behind the software.</p>
-        <p>My work included building out the service for a new sport, making sure it had all the functionality it needed and that it was robust in the face of everything that live use would throw at it - for example, the service needed to use complex mathematical equations for calculating probabilities, which I integrated. In every piece of work I did, I had to make sure that it was thoroughly tested and wasn’t going to cause problems when it went to production. This service allowed the business to offer more services to its customers.</p>
+        <p>My work included building out the service for a new sport, ensuring full functionality and that it was robust in the face of everything that live use would throw at it - for example, I integrated complex mathematical equations for calculating probabilities. I delivered thoroughly tested, reliable code for production environments, supporting the launch of new customer services and business growth.</p>
       </article>
     </section>
 
@@ -110,20 +139,8 @@
 
       <article class="project">
         <h3>Cooperation Hull — Website development <span class="dates">(2024–present)</span></h3>
-        <p class="tech">HTML, CSS, JavaScript</p>
-        <p><a href="https://cooperationhull.co.uk/">https://cooperationhull.co.uk/</a></p>
-
-        <!-- Screenshot: save the image as images/cooperation-hull.webp (or .png),
-             then uncomment this block and set the width and height to the image's real size. -->
-        <!--
-        <figure>
-          <a href="https://cooperationhull.co.uk/">
-            <img src="images/cooperation-hull.webp" width="1200" height="750" loading="lazy"
-                 alt="Screenshot of the Cooperation Hull website homepage">
-          </a>
-        </figure>
-        -->
-
+        <p class="tech">ASP.NET, C#, Bootstrap</p>
+        <p><a href="https://cooperationhull.co.uk/" target="_blank">https://cooperationhull.co.uk/</a></p>
         <p>Designed and developed the organisation’s website using ASP.NET, C# and Bootstrap. Worked with other members of the organisation to establish requirements and continue to maintain and improve the website.</p>
       </article>
     </section>
@@ -147,6 +164,14 @@
     </section>
 
   </main>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Have a project in mind?</h2>
+      <p>Email me a few details about what you need and we can arrange a call. Once we’re agreed on what’s needed, I’ll send you a quote.</p>
+      <a class="button" href="mailto:development@arthurharding.co.uk">Email me</a>
+    </div>
+  </section>
 
   <footer class="site-footer">
     <div class="container">
